@@ -11,6 +11,7 @@
         body {
             font-family:'Quicksand', sans-serif;
             margin: 0%;
+            max-width: 100%;
         }
     </style>
     <link rel="stylesheet" href="style.css">
@@ -19,14 +20,15 @@
 <body>
     <header>
         <nav class="navbar">
-            <ul>
-                <div class="container">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Layanan Kami</a></li>
-                    <li><a href="">Hubungi Kami</a></li>
-                    <li><a href="">Harga Batik</a></li>
-                </div>
-            </ul>
+            <div class="container">    
+                <ul>
+                    <li><a href="index.html ">Home</a></li>
+                    <li><a href="#layananKami">Layanan Kami</a></li>
+                    <li><a href="#hubungiKami">Hubungi Kami</a></li>
+                    <li><a href="#harga">Harga Batik</a></li>
+                </ul>
+                <!-- <div class="handle">Menu</div> -->
+            </div>
         </nav>
     </header>
     <main>
@@ -39,10 +41,10 @@
                 <button type="button" onclick="">Pesan sekarang</button>
             </div>
         </div>
-        <p style="text-align: center; font-weight: bold; font-size: 25px;">Layanan Kami</p>
+        <p id="layananKami" style="text-align: center; font-weight: bold; font-size: 25px;">Layanan Kami</p>
         <hr style="width: 60%;">
         <div class="container">
-            <div class="jenisBatik">
+            <div id="" class="jenisBatik">
                 <div>
                     <img src="pic/1.png" alt="">
                     <h1 style="font-size: 17px; color: #FF7C16;">KAIN SERAGAM BATIK MOTIF CUSTOM</h1>
@@ -50,7 +52,7 @@
                         untuk keperluan seragam kantor,<br> sekolah, komunitas, dan lainnya.</p>
                 </div>
                 <div>
-                    <img src="pic/2.png" style="width: 180px;" alt="">
+                    <img src="pic/2.png" style="width: auto;" alt="">
                     <h1 style="font-size: 17px; color: #FF7C16;">KAIN SERAGAM BATIK MOTIF DAERAH</h1>
                     <p>Melayani jasa pembuatan kain batik<br>
                         dengan motif Daerah. dengan<br>
@@ -60,7 +62,7 @@
                         sekolah, komunitas, dan lainnya.</p>
                 </div>
                 <div>
-                    <img src="pic/3.png" style="width: 193px;" alt="">
+                    <img src="pic/3.png" style="width: auto;" alt="">
                     <h1 style="font-size: 17px; color: #FF7C16;">KAIN BATIK STOK READY</h1>
                     <p>Kami juga menyediakan kain batik seragam<br>
                         ready stock untuk memenuhi<br>
@@ -71,7 +73,7 @@
             </div>
             <div class="jenisBatik">
                 <div>
-                    <img src="pic/4.png" style="width: 57%;" alt="">
+                    <img src="pic/4.png" style="width: auto;" alt="">
                     <h1 style="font-size: 16px; color: #FF7C16;">TAPLAK MEJA MOTIF BATIK CUSTOM/DAERAH</h1>
                     <p>Melayani jasa pembuatan batik dengan<br>
                         motif custom atau daerah dengan<br>
@@ -79,7 +81,7 @@
                         taplak meja</p>
                 </div>  
                 <div>
-                    <img src="pic/5.png" style="width: 180px;" alt="">
+                    <img src="pic/5.png" style="width: auto;" alt="">
                     <h1 style="font-size: 17px; color: #FF7C16;">KAIN BATIK UNTUK BAJU/CELANA</h1>
                     <p>Menerima pembuatan kain batik untuk<br>
                         digunakan sebagai kain pembuatan<br>
@@ -120,7 +122,7 @@
                 </div>
             </div>
         </div>
-        <div class="harga">
+        <div id="harga" class="harga">
             <h1>Harga Pembuatan Batik Layanan Kami</h1>
             <p style="color: black;">Berikut Adalah Hal-Hal Yang Mempengaruhi Harga Batik Kami :</p>
         </div>
@@ -181,7 +183,7 @@
                         kami</p>
                 </div>
                 <div>
-                    <img src="pic\real-estate.png" style="width: 30%;" alt="">
+                    <img src="pic\real-estate.png" style="width: auto;" alt="">
                     <h1 style="font-size: 17px; color: #4A1110;">Alamat Jelas</h1>
                     <p>Alamat tertera jelas dan<br>
                         dapat dipertangggung<br>
@@ -221,7 +223,40 @@
                 </div>  
             </div>
         </div>
-        <div class="hubungi">
+        <div class="TentangKami">
+            <div class="container">
+                <h1>Tentang kami</h1>
+                <p>Batik Nation Melayani Berbagai Pesanan Batik Baik Untuk Kelompok Ataupun Individu.
+                    Lebih Dari 10 Tahun Batik Nation Dalam Menekuni Industri Batik. Didukung Oleh Tenaga Kerja Terampil Dan Profesional Yang Menjadikan
+                    Seragam Batik Yang Kami Hasilkan Memiliki Kualitas Tinggi.</p>
+            </div>
+        </div>
+        <div class="Testi">
+            <div class="container" style="display: flex;">
+                <div class="garis"></div>
+                <div class="text">
+                    <h1>TESTIMONI<br>PELANGGAN <span style="color: #FF7C16;">BATIK NATION</span></h1>
+                    <p> <span style="color: #FF7C16;">Batik Nation</span> telah menekuni bisnis membatik lebih<br>
+                        dari 10 tahun berikut adalah beberapa pendapat<br>
+                        dari pelanggan yang pernah bekerja sama dengan kami</p>
+                </div>
+                <div class="bubble">
+                    <div>
+                        <h1 style="color: black;">Edi Supardi</h1>
+                        <p>Motif Custom batiknya<br>
+                            bagus sekali, bahan juga nyaman<br>
+                            ketika dipakai</p>
+                    </div>
+                    <div>
+                        <h1 style="color: black;">Siti Fatimah</h1>
+                        <p>Hasil Pembuatan Batik Bagus, Tidak<br>
+                            Banyak Yang Keluar Pola, Pelayanan<br>
+                            Tepat Waktu Dan Admin Nya Ramah :)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="hubungiKami" class="hubungi">
             <h1 style="margin-bottom: 0%;"><span style="color: #FF7C16;">HUBUNGI</span> KAMI</h1>
             <P style="margin-top: 10px;"><span style="font-weight: bold;">Batik nation</span>,menyediakan baju batik dan <br> memberikan jasa untuk mendesain batik pada baju<br</P>
             <br>

@@ -25,12 +25,16 @@
     text-decoration: none;
     font-weight: bold;
 }
+.navbar a:hover{
+    transform: matrix();
+}
 .navbar img {
     height: 50px;
     list-style-image: none;
 }
 ul {
     display: block;
+    float: right;
     list-style-type: disc;
     margin-block-start: 0px;
     margin-block-end: 0em;
@@ -42,6 +46,7 @@ ul {
     max-width: 100%;
     margin-left: 10%;
     margin-right: 10%;
+    min-height: 200px;
 }
 .jumbotron {
     padding-top: 50px;
@@ -49,7 +54,7 @@ ul {
     background-image: url("./pic/batik.jpg");
     background-size: 100%;
     background-blend-mode: difference;
-    height: 600px;
+    height: 660px;
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
@@ -112,11 +117,12 @@ button {
     display: flex;
     background-color: white;
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .white > div{
     background-color: white;
-    margin: 20px;
+    margin: auto;
     padding: 10px;
     font-size: 10px;
     text-align: center;
@@ -133,7 +139,6 @@ button {
     background-color: white;
     margin-top: 100px;
     align-content: center;
-
 }
 .card{
     display: grid;
@@ -146,7 +151,7 @@ button {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     text-align: center;
     width: fit-content;
-    margin-left: 25px;
+    margin: auto;
     align-content: center;
     transition: 0.5s ease;
     cursor: pointer;
@@ -186,8 +191,41 @@ button {
     height: 100px;
     padding-top: 10px; 
 }
-    
-
+.TentangKami {
+    text-align: center;
+    background-image: url("pic/TentangKami.png");
+    padding: 50px;
+    font-size: large;
+    font-weight: bold;
+    color: #393636;
+}
+.Testi {
+    background-color: #574333;
+    color: white;
+    padding: 70px;
+}
+.garis {
+    border-left: 6px solid white;
+    height: 180px;
+    margin: auto;
+}
+.text {
+    margin-top: 60px;
+    margin-right: auto;
+}
+.bubble > div {
+    background-color: #FF7C16;
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px;
+    margin: 20px;
+}
+.bubble > div > h1 {
+    margin: 0px;
+}
+.bubble > div > p {
+    margin: 5px;
+}
 .hubungi img{
     width: 30px;
     margin-right: 20px;
