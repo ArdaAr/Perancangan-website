@@ -235,19 +235,16 @@ button {
 
 .telfon{
     display: flex;
-    margin-left: 250px; 
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
     padding-top: 150px;
     text-align: center;
-    align-content: center;
 }
 .telfon > div p{
     background-color: #FF7C16;
     border-radius: 30px;
     color: white;
     align-self: center;
-}
-.telfon > div{
-    margin-left: 150px;
 }
 .telfon img{
     width: 60px;  
@@ -259,6 +256,7 @@ button {
 }
 
 footer{
+    margin-top: 50px;
     text-align: center;
     font-weight: bold;
     padding: 3px;
