@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            font-family:'Quicksand', sans-serif;
+        }
+        .container {
+            padding: 10%;
+            max-width: 100%;
+            /* display: flex; */
+        }
+    </style>
+    <title>Form Pemesanan</title>
+</head>
+<body>
+<main>
+    <div class="container"> 
+        <form name="tabelPesanan" method="POST">
+            <h1 style="font-size: 40px;">FORM <span style="color: #FF7C16;">PEMESANAN</span></h1>
+            <p>Silakan isi form berikut untuk keterangan pesanan Anda</p>
+            <hr>
+            <div class="konten">
+                <label for="nama">Nama </label><br>
+                <input type="text" name="Nama" id="nama"><br>
+
+                <label for="email">E-mail </label><br>
+                <input type="email" name="email" id="email"><br>
+
+                <label for="nomor">No. HP</label><br>
+                <input type="number" name="nomor" id="noHP"><br>
+
+                <label for="alamat">Alamat</label><br>
+                <input type="text" name="alamat" id="alamat"><br>
+
+                <label for="kodepos">Kode Pos</label><br>
+                <input type="number" name="kodepos" id="kodepos"><br>
+
+                <label for="JenisPesanan">Jenis Pesanan</label><br>
+                <input style="width: auto; margin-top: 10px;" type="radio" id="JenisPesanan" name="JenisPesanan" value="Seragam Batik">
+                <label style="font-weight: 500;" for="seragamBatik">Seragam Batik</label><br>
+                <input style="width: auto;" type="radio" id="JenisPesanan" name="JenisPesanan" value="Kain Taplak">
+                <label style="font-weight: 500;" for="kainTaplak">Taplak Batik</label><br>
+                <input style="width: auto;" type="radio" id="JenisPesanan" name="JenisPesanan" value="Kain Batik">
+                <label style="font-weight: 500;" for="kainBatik">Kain Batik</label><br>
+
+                <label for="motifBatik">Motif Batik Pesanan</label><br>
+                <input style="width: auto; margin-top: 10px;" type="radio" id="Daerah" name="Motif" value="Motif Daerah">
+                <label style="font-weight: 500;" for="MotifDaerah">Motif Batik Daerah</label><br>
+                <input style="width: auto;" type="radio" id="Daerah" name="Motif" value="Motif Custom">
+                <label style="font-weight: 500;" for="MotifCustom">Motif Batik Custom</label><br>
+
+                <label for="keteranganMotif">Keterangan Motif Yang di Pesan (contoh : batik motif daerah jogja)</label><br>
+                <input type="text" name="keterangan" id="keterangan"><br>
+                
+                <label for="jumlah">Jumlah Pesanan</label><br>
+                <input type="number" name="jumlah" id="pesanan"><br>
+                
+                <button type="button" onclick='tambahData()' class="submit">SUBMIT</button>
+
+            </div>
+        </form>
+        <table id="tabelKeterangan">
+            <h1 style="font-size: 40px;">TABEL <span style="color: #FF7C16;">PESANAN</span></h1>
+            <tr>
+                <th>Nama</th>
+                <th>Email</th>
+                <th>No.HP</th>
+                <th>Alamat</th>
+                <th>Kode Pos</th>
+                <th>Jenis Pesanan</th>
+                <th>Motif Batik</th>
+                <th>Keterangan Motif</th>
+                <th>Jumlah Pesanan</th>
+            </tr>
+        </table>
+    </div>
+    <script src="/FormPemesanan/script.js"></script>
+    <footer>
+        <p> &copy 2020 Batiknation.com - All right reserved</p>
+    </footer>
+</main>
+</body>
+</html>
