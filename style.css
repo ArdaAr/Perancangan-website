@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
+@media (max-width:680px){
+
+	main{
+		width: auto;
+		float: none;
+    }
+    .jenisBatik {
+        flex-wrap: wrap;
+    }
+}
+
 .navbar {
     margin-bottom: 0px;
     background-color: #FF7C16;
@@ -11,6 +22,7 @@
     overflow: hidden;
     width: 100%;
     max-width: 100%;
+    box-shadow: -1px -3px 20px 0px #4b2118;;
 }
 .navbar li {
     display: inline-block;
@@ -226,13 +238,15 @@ button {
 .bubble > div > p {
     margin: 5px;
 }
+.hubungi {
+    margin-bottom: 50px;
+}
 .hubungi img{
     width: 30px;
     margin-right: 20px;
     margin-top: 20px;
     margin-bottom: 0%;
 }
-
 .telfon{
     display: flex;
     flex-wrap: wrap;

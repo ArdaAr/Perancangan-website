@@ -15,6 +15,11 @@
         }
     </style>
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function pindah(url){
+            window.location = url;
+        }
+    </script>
     <title>Batik Nation</title>
 </head>
 <body>
@@ -38,7 +43,7 @@
                 <p style="font-size: 40px; font-weight: bold; margin-top: 0px; margin-bottom: 0%">Jasa Pemesanan Batik</p>
                 <p style=" font-size: 20px;  margin-top: 0px;">Ingin pesan batik tak perlu repot datang ke toko atau butik, anda dirumah saja,<br> batik pesanan anda akan sampai ke rumah anda. <br>
                     Ayo pesan sekarang!</p>
-                <button type="button" onclick="">Pesan sekarang</button>
+                <button type="button" onclick="pindah('Form/form.html')">Pesan sekarang</button>
             </div>
         </div>
         <p id="layananKami" style="text-align: center; font-weight: bold; font-size: 25px;">Layanan Kami</p>
@@ -282,7 +287,6 @@
         <footer>
             <p>&copy 2020 Batiknation.com - All right reserved</p>
         </footer>
-        
     </main>
 </body>
 </html>
