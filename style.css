@@ -60,6 +60,9 @@ ul {
     margin-right: 10%;
     min-height: 200px;
 }
+.li:hover,a.abc:active{
+    text-decoration: underline;
+}
 .jumbotron {
     padding-top: 50px;
     margin-top: 0px;
