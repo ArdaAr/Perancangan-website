@@ -1,64 +1,52 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-@media (max-width:680px){
 
-	main{
-		width: auto;
-		float: none;
-    }
-    .jenisBatik {
-        flex-wrap: wrap;
-    }
+html {
+    scroll-behavior: smooth;
 }
-
-.navbar {
-    margin-bottom: 0px;
+header {
     background-color: #FF7C16;
-    height: 70px;
-    text-align: end;
+    padding-top: 10px;
+    min-height: 70px;
     position: fixed;
-    top: 0;
-    overflow: hidden;
+    top: 1;
     width: 100%;
-    max-width: 100%;
-    box-shadow: -1px -3px 20px 0px #4b2118;;
 }
-.navbar li {
-    display: inline-block;
-    list-style-type: none;
-    padding: 5px;
-    margin-top: 20px;
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
+header #brand {
+    float: left;
+    width: auto;
 }
-.navbar a {
-    color: white;
+header #brand h1 {
+    margin-top: 2px;
+}
+header nav {
+    float: right;
+    margin-top: 0px;
+}
+header li {
+    float: left;
+    display: inline;
+    padding: 10px;
+}
+header a {
     text-decoration: none;
-    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+ul {
+    margin: 0;
+    padding: 0;
 }
 .navbar a:hover{
     transform: matrix();
-}
-.navbar img {
-    height: 50px;
-    list-style-image: none;
-}
-ul {
-    display: block;
-    float: right;
-    list-style-type: disc;
-    margin-block-start: 0px;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 0px;
+    color: #393636;
 }
 .container {
-    max-width: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    min-height: 200px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 .li:hover,a.abc:active{
     text-decoration: underline;
@@ -69,16 +57,16 @@ ul {
     background-image: url("./pic/batik.jpg");
     background-size: 100%;
     background-blend-mode: difference;
-    height: 660px;
+    min-height: 660px;
     font-family: 'Quicksand', sans-serif;
     color: white;
 }
-.jumbotron img{
-    height: 570px;
+/* .jumbotron img{
+    min-height: 700px;
     width: 100%;
     background-color: #11C5C6;
     filter: brightness(50%);
-}
+} */
 button {
     background-color: #FF7C16;
     color: white;
@@ -94,13 +82,14 @@ button {
 }
 .jenisBatik {
     display: flex;
+    justify-content: center;
 }
 .jenisBatik > div {
     background-color:inherit;
     padding: 20px;
     font-size: 30px;
     text-align: center;
-    width: 100%;
+    width: 30%;
     flex-flow: row wrap;
 }
 .jenisBatik div p {
@@ -125,80 +114,68 @@ button {
     color: white;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    height: 100px;
+    min-height: 120px;
     padding-top: 2px;
 }
-.white{
-    display: flex;
+.white div {
+    float: left;
+    width: 30%;
     background-color: white;
+    margin:20px;
     margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-.white > div{
-    background-color: white;
-    margin: auto;
-    padding: 10px;
-    font-size: 10px;
+    margin-bottom: 100px;
     text-align: center;
 }
 .harga{
     color: #FF7C16;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    height: 100px;
+    /* height: 100px; */
     padding-top: 10px; 
+    margin-bottom: 5px;
 }
 .flex{
-    display: flex;
     background-color: white;
-    margin-top: 100px;
+    margin-top: 50px;
     align-content: center;
+    margin-bottom: 100px;
 }
 .card{
+    padding: 20px;
+    float: left;
     display: grid;
     grid-template-columns: 300px;
     grid-template-rows: 210px 210px 80px;
     grid-template-areas: "image" "text" "stats";
-    font-family: 'quicksand', sans-serif;
     border-radius: 18px;
     background: white;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     text-align: center;
     width: fit-content;
-    margin: auto;
+    margin: 10px;
     align-content: center;
     transition: 0.5s ease;
     cursor: pointer;
-    width: 250px;
+    width: 23.3%;
+    justify-content: center;
 }
 .card-stats{
-    border-radius   : 20px;
-    margin-top: 55px;
+    border-radius: 20px;
+    width: auto;    
     height: 25px;
-    margin-right: 50px;  
+    margin: 10px;
+    margin-top: 80px;
 } 
 
 .card-image img{
-    margin-top: 50px;
-    margin-right: 50px;
     width: 150px;
 }
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
-
 }
-.card-text h1 {
-    font-size: 25px;
-    text-align: center;
-    margin-right: 50px;
-} 
 .card-text p{
-    font-size: 15px;
-    text-align: center;
-    margin-right: 50px;
-    padding: 10px;
+    margin: 15px;
 }
 .hubungi{
     font-family: 'Montserrat', sans-serif;
@@ -217,23 +194,32 @@ button {
 .Testi {
     background-color: #574333;
     color: white;
-    padding: 70px;
+    padding: 50px;
+    justify-content: center;
 }
 .garis {
+    float: left;
     border-left: 6px solid white;
-    height: 180px;
-    margin: auto;
+    height: 300px;
+    width: 10%;
 }
-.text {
+.paragraf {
+    float: left;
     margin-top: 60px;
+    margin-left: 20px;
     margin-right: auto;
+    width: 50%;
+}
+.bubble {
+    float: left;
+    width: 30%;
 }
 .bubble > div {
     background-color: #FF7C16;
     border-radius: 10px;
     width: 400px;
     padding: 10px;
-    margin: 20px;
+    margin: 20px;   
 }
 .bubble > div > h1 {
     margin: 0px;
@@ -279,4 +265,63 @@ footer{
     padding: 3px;
     background-color: #FF7C16;
     color: black;
+}
+#sosmed img:hover {
+    transform: scale(1.05);
+}
+.telfon p:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+@media (min-width:100px) and (max-width:915px){
+    header #brand , header nav, header nav li {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header li {
+        display: inline-block;
+    }
+    .jumbotron{
+        background-size: auto;
+    }
+    .jenisBatik, .jenisBatik div {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .garis {
+        height: 0%;
+    }
+    .profit{
+        display: block;
+    }
+    .bubble {
+        justify-content: center;
+        float: none;
+        width: 90%;
+        padding: 0;
+    }
+    .bubble div {
+        width: 100%;
+    }
+    .card {
+        float: none;
+        width: 95% ;
+    }
+    .card-stats{
+        width: auto;
+    }
+    .Testi {
+        padding: 0%;
+    }
+    .white div, .paragraf {
+        float: none;
+        text-align: center;
+        width: 100%;
+        margin: 0;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 0;
+    }
 }
