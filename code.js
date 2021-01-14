@@ -8,3 +8,15 @@ toogleNavbar.addEventListener('click', () => {
 function pindah(url){
     window.location = url;
 }
+
+function facebook(url){
+    window.location = url;
+}
+
+function instagram(url){
+    window.location = url
+}
+
+function wa(url){
+    window.location = url
+}
